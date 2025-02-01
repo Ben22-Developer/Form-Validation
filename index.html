@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an input validation page">
+    <link rel="icon" type="JPG" href="Images/icon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>CODING ELITE OFFICIAL</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Welcome to CODING ELITE</h1> 
+            <h3>Let us know who you are and help us improve our services</h3>
+        </header>
+        <aside>
+            <img src="Images/Programmer.jpg" alt="an image of a programmer">
+        </aside>
+        <section id="form_section">
+            <p>Let's do this!</p>
+            <form>
+                <fieldset>
+                    <div>
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" id="first_name" placeholder="SHIMWA" required>
+                        <p class="validation hidden"></p> 
+                    </div>
+                    <div>
+                        <label for="second_name">SECOND NAME</label>
+                        <input type="text" id="second_name" placeholder="Benjamin" required>
+                        <p class="validation hidden"></p> 
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" placeholder="shiben@example.com" required>
+                        <p class="validation hidden"></p> 
+                    </div>
+                    <div>
+                        <label for="phone_number">PHONE NUMBER</label>
+                        <input type="number" id="phone_number" placeholder="+250780270994" required>
+                        <p class="validation hidden"></p> 
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                        <p class="validation hidden"></p>
+                    </div>
+                    <div>
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" id="confirm_password" required>
+                        <p class="validation hidden"></p>
+                    </div> 
+                </fieldset>
+                <button id="create_account">Create Account</button>
+            </form>
+            <div class="to_log_in_div">      
+                <p>Already have an account? <span id="to_log_in_btn">Log in</span></p> 
+            </div>
+        </section>
+        <section id="inputs_check" class="hidden">
+            <div id="close">❌</div>
+            <form>
+                <label for="phone_number_check">Enter your number</label>
+                <input type="number" id="phone_number_check" required>
+                <label for="password_check">Enter Password</label>
+                <input type="password" id="password_check" required>
+                <p class="validation hidden"></p>
+            </form>
+            <button id="check_button">Continue</button>
+        </section>
+        <section id="user_confirmation_section" class="hidden">
+            <p id="user_confirmation_p"></p>
+            <button>Okay</button>
+        </section>
+        <section id="visit_portifolio" class="none">
+            <h1>Welcome</h1>
+            <h2>Get to know more about us <a href="https://ben22-developer.github.io/My-Portifolio/" target="_blank">HERE</a></h2>
+            <button>Back</button>
+        </section>
+    </main>
+</body>
+</html>
