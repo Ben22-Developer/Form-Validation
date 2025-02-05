@@ -185,6 +185,16 @@ input:focus {
     #inputs_check{
         width: 70%;
     }
+    main {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    aside {
+        display: none;
+    }
+    header, #form_section {
+        grid-column: 1/2;
+    }
 }
 
 @media (width <= 480px) {
@@ -200,20 +210,6 @@ input:focus {
         }
     }
 }
-
-@media (width < 375px) {
-    main {
-        display: grid;
-        grid-template-columns: 100%;
-    }
-    aside {
-        display: none;
-    }
-    header, #form_section {
-        grid-column: 1/2;
-    }
-}
-
 @media (aspect-ratio >= 1) {
     main {
         position: relative;
