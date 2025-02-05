@@ -187,12 +187,13 @@ input:focus {
     main {
         display: grid;
         grid-template-columns: 100%;
+        width: 100%;
+    }
+    header, #form_section {
+        grid-column: 1/2;   
     }
     aside {
         display: none;
-    }
-    header, #form_section {
-        grid-column: 1/2;
     }
 }
 
@@ -209,6 +210,7 @@ input:focus {
         }
     }
 }
+
 @media (aspect-ratio >= 1) {
     main {
         position: relative;
